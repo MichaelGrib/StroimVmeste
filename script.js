@@ -5,14 +5,18 @@ const banner = new Splide( '#banner', {
 	cover      : true,
     autoplay   : true,
 } ).mount();
+const works = new Splide( '.obj__slider', {
+	type       : 'loop',
+	gap        : 4,
+	fixedHeight: 370,
+	perPage    :  3,
+	autoWidth  : true,
+	pagination : true,
+	arrows     : true,
+	cover      : true,
+	trimSpace  : false,
+} ).mount();
 
-const tel = document.getElementById('tel')
-telvalue = tel.value
-document.getElementById('selecttel').addEventListener('click', () => {
-	tel.select()
-})
-tel.addEventListener('input', event => {
-	event.preventDefault()
-	tel.value = telvalue
-})
+
+
 

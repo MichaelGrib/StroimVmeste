@@ -1,159 +1,208 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отделочные работы</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="./modules/glide.core.min.css">
-    <link rel="stylesheet" href="./modules/splide.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="tnav__back">
-        <div class="tnav__container">
-            <div class="tnav__left">
-                <img class="tnav__iconlogo" src="./images/iconlogo.svg" alt="" srcset="">
-                <img src="./images/textlogo.png" alt="" class="tnav__textlogo">
-                <p class="tnav__desription">Строительство и ремонт<br/>Гомель, Гомельская область</p>
-            </div>
-            <div class="tnav__right">
-                <a href="tel:+375 (25) 918-08-64" class="tnav__btn">Позвонить</a>
-                <img src="./images/call.png" alt="" class="tnav__callicon">
-                <a class="tnav__tel" href="" ><span class="tnav__telcode">+375 (25) </span>549-08-02</a>
-            </div>
-            
-        </div>
-    </div>
-    <div class="bnav__back">
-        <div class="bnav__container">
-            <a href="#" class="bnav__link">Главная</a>
-            <a href="#" class="bnav__link">Виды работ</a>
-            <a href="#" class="bnav__link">Наши объекты</a>
-            <a href="#" class="bnav__link">О нас</a>
-            <a href="#contacts" class="bnav__link">Контакты</a>
-        </div>
-    </div>
-    <div class="splide banner__container" id="banner">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide banner__item">
-                    <h1 class="banner__h1">Капитальный ремонт помещений под ключ</h1>
-                    <img class="banner__img" src="./images/banner_1.jpg" alt="">
-                </li>
-                <li class="splide__slide banner__item">
-                    <h1 class="banner__h1">Ремонт коммерческих помещений под ключ</h1>
-                    <img class="banner__img" src="./images/banner_2.jpg" alt="">
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="service__container">
-        <h2 class="service__h2">Что мы предлагаем?</h2>
-        <div class="service__grid">
-            <div class="service__item">
-                <img src="./images/service/service_1.jpg" alt="" class="service__img">
-                <p class="service__name">Любые отделочные работы</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_2.jpg" alt="" class="service__img">
-                <p class="service__name">Установка окон и дверей</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_3.jpg" alt="" class="service__img">
-                <p class="service__name">Ремонт санузлов</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_4.jpg" alt="" class="service__img">
-                <p class="service__name">Общестроительные работы</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_5.jpg" alt="" class="service__img">
-                <p class="service__name">Электрика</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_6.jpg" alt="" class="service__img">
-                <p class="service__name">Сантехника, водоснабжение, отпление, канализация</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_7.jpg" alt="" class="service__img">
-                <p class="service__name">Возведение стен, перегородок из любых матеиалов</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_8.jpg" alt="" class="service__img">
-                <p class="service__name">Кровельные работы, заборы</p>
-            </div>
-            <div class="service__item">
-                <img src="./images/service/service_9.jpg" alt="" class="service__img">
-                <p class="service__name">Утепление и отделка фасадов и балконов</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Отделочные работы</title>
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="./modules/glide.core.min.css">
+        <link rel="stylesheet" href="./modules/splide.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="mnav__container" id="mobilemenu" style="display: none;">
+            <img src="./images/cross.svg" class="mnav__exit" id="exit_mobile" />
+            <div class="mnav__list">
+                <a href="./index.html" class="mnav__link">Главная</a>
+                <a href="./service.html" class="mnav__link">Виды работ</a>
+                <a href="./objects.html" class="mnav__link">Наши объекты </a>
+                <a href="./index.html/#service" class="mnav__link">О нас</a>
+                <a href="./index.html/#contacts" class="mnav__link">Контакты</a>
             </div>
         </div>
-        <a href="#" class="service__btn">Посмотреть виды работ подробнее</a>
-    </div>
-    <div class="plus__back">
-        <div class="plus__container">
-            <h2 class="plus__h2">Почему мы?</h2>
-            <ul class="plus__list">
-                <li class="plus__item">
-                    <div class="plus__img plus__img_1" ></div>
-                    <p class="plus__text">Опыт работы более 15 лет</p>
-                </li>
-                <li class="plus__item">
-                    <div class="plus__img plus__img_2" ></div>
-                    <p class="plus__text">Честность и порядочность</p>
-                </li>
-                <li class="plus__item">
-                    <div class="plus__img plus__img_3" ></div>
-                    <p class="plus__text">Соблюдение всех технологических процессов</p>
-                </li>
-                <li class="plus__item">
-                    <div class="plus__img plus__img_4" ></div>
-                    <p class="plus__text">Разумные цены</p>
-                </li>
-                <li class="plus__item">
-                    <div class="plus__img plus__img_5" ></div>
-                    <p class="plus__text">Помощь в выборе и доставке материалов</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="contacts" class="contacts__back">
-        <div class="contacts__container">
-            <h2 class="contacts__h2">Контакты</h2>
-            <div class="contacts__flex">
-                <div class="contacts__top">
-                    <img id="selecttel" src="./images/call.png" alt="" class="contacts__call">
-                    <input  id="tel" value="+375 (25) 918-08-64" class="contacts__tel"></input>
+        <div class="tnav__back">
+            <div class="tnav__container">
+                <div class="tnav__mobile" id="open_mobile"></div>
+                <div class="tnav__left">
+                    <img class="tnav__iconlogo" src="./images/iconlogo.svg" alt="" srcset="">
+                    <img src="./images/textlogo.png" alt="" class="tnav__textlogo">
+                    <p class="tnav__desription">Строительство и ремонт<br/>Гомель, Гомельская область</p>
                 </div>
-                <div id="socials" class="contacts__bottom">
-                    <a href="#" class="contacts__a"><img src="./images/viber.png" alt="viber" class="contacts__img"></a>
-                    <a href="#" class="contacts__a"><img src="./images/telegram.png" alt="telegram" class="contacts__img"></a>
-                    <a href="#" class="contacts__a"><img src="./images/whatssapp.png" alt="whatsapp" class="contacts__img"></a>
-                    <a href="#" class="contacts__a"><img src="./images/vk.png" alt="vk" class="contacts__img"></a>
+                <div class="tnav__right">
+                    <a href="tel:+375 (25) 918-08-64" class="tnav__btn">Позвонить</a>
+                    <img src="./images/call.png" alt="" class="tnav__callicon">
+                    <a class="tnav__tel" href="" ><span class="tnav__telcode">+375 (25) </span>549-08-02</a>
                 </div>
+                
             </div>
-            
         </div>
-    </div>
-    <div class="tfooter__container">
-        <div class="tfooter__left">
-            <a href="#" class="tfooter__a">Наши объекты</a>
-            <a href="#" class="tfooter__a">Виды работ</a>
+        <div class="bnav__back">
+            <div class="bnav__container">
+                <a href="./index.html" class="bnav__link">Главная</a>
+                <a href="./service.html" class="bnav__link">Виды работ</a>
+                <a href="./objects.html" class="bnav__link">Наши объекты</a>
+                <a href="./index.html/#service" class="bnav__link">О нас</a>
+                <a href="./index.html/#contacts" class="bnav__link">Контакты</a>
+            </div>
         </div>
-        <div class="tfooter__right">
-            <p class="tfooter__tel">+375 (25) 100-05-05</p>
-            <p class="tfooter__address">Гомель, Гомельская область</p>
+
+                <!-- sections -->
+
+                    <div class="splide banner__container" id="banner">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide banner__item">
+                                    <h1 class="banner__h1">Капитальный ремонт помещений под ключ</h1>
+                                    <img class="banner__img" src="./images/banner_1.jpg" alt="">
+                                </li>
+                                <li class="splide__slide banner__item">
+                                    <h1 class="banner__h1">Ремонт коммерческих помещений под ключ</h1>
+                                    <img class="banner__img" src="./images/banner_2.jpg" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="service" class="service__container">
+                        <h2 class="service__h2">Что мы предлагаем?</h2>
+                        <div class="service__grid">
+                            <div class="service__item">
+                                <img src="./images/service/service_1.jpg" alt="" class="service__img">
+                                <p class="service__name">Любые отделочные работы</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_2.jpg" alt="" class="service__img">
+                                <p class="service__name">Установка окон и дверей</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_3.jpg" alt="" class="service__img">
+                                <p class="service__name">Ремонт санузлов</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_4.jpg" alt="" class="service__img">
+                                <p class="service__name">Общестроительные работы</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_5.jpg" alt="" class="service__img">
+                                <p class="service__name">Электрика</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_6.jpg" alt="" class="service__img">
+                                <p class="service__name">Сантехника, водоснабжение, отпление, канализация</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_7.jpg" alt="" class="service__img">
+                                <p class="service__name">Возведение стен, перегородок из любых матеиалов</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_8.jpg" alt="" class="service__img">
+                                <p class="service__name">Кровельные работы, заборы</p>
+                            </div>
+                            <div class="service__item">
+                                <img src="./images/service/service_9.jpg" alt="" class="service__img">
+                                <p class="service__name">Утепление и отделка фасадов и балконов</p>
+                            </div>
+                        </div>
+                        <a href="#" class="service__btn">Посмотреть виды работ подробнее</a>
+                    </div>
+                    <div class="plus__back">
+                        <div class="plus__container">
+                            <h2 class="plus__h2">Почему мы?</h2>
+                            <ul class="plus__list">
+                                <li class="plus__item">
+                                    <div class="plus__img plus__img_1" ></div>
+                                    <p class="plus__text">Опыт работы более 15 лет</p>
+                                </li>
+                                <li class="plus__item">
+                                    <div class="plus__img plus__img_2" ></div>
+                                    <p class="plus__text">Честность и порядочность</p>
+                                </li>
+                                <li class="plus__item">
+                                    <div class="plus__img plus__img_3" ></div>
+                                    <p class="plus__text">Соблюдение всех технологических процессов</p>
+                                </li>
+                                <li class="plus__item">
+                                    <div class="plus__img plus__img_4" ></div>
+                                    <p class="plus__text">Разумные цены</p>
+                                </li>
+                                <li class="plus__item">
+                                    <div class="plus__img plus__img_5" ></div>
+                                    <p class="plus__text">Помощь в выборе и доставке материалов</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="obj__container">
+                        <h2 class="obj__h2">Наши объекты</h2>
+                        <div class="splide obj__slider">
+                            <div class="splide__track" data-glide-el="track">
+                                <ul class="splide__list">
+                                    <img src="./images/objects/object_1.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_2.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_3.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_4.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_5.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_6.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_7.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_8.jpg" alt="" class="splide__slide obj__img">
+                                    <img src="./images/objects/object_9.jpg" alt="" class="splide__slide obj__img">
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="./objects.html" class="obj__a">Больше фото</a>
+                    </div>
+                    <div id="contacts" class="contacts__back">
+                        <div class="contacts__container">
+                            <h2 class="contacts__h2">Контакты</h2>
+                            <div class="contacts__flex">
+                                <div class="contacts__top">
+                                    <img id="selecttel" src="./images/call.png" alt="" class="contacts__call">
+                                    <input  id="tel" value="+375 (25) 918-08-64" class="contacts__tel"></input>
+                                </div>
+                                <div id="socials" class="contacts__bottom">
+                                    <a href="#" class="contacts__a"><img src="./images/viber.png" alt="viber" class="contacts__img"></a>
+                                    <a href="#" class="contacts__a"><img src="./images/telegram.png" alt="telegram" class="contacts__img"></a>
+                                    <a href="#" class="contacts__a"><img src="./images/whatssapp.png" alt="whatsapp" class="contacts__img"></a>
+                                    <a href="#" class="contacts__a"><img src="./images/vk.png" alt="vk" class="contacts__img"></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+        
+                <!-- sections -->
+
+        <div class="tfooter__container">
+            <div class="tfooter__left">
+                <a href="./objects.html" class="tfooter__a">Наши объекты</a>
+                <a href="./service.html" class="tfooter__a">Виды работ</a>
+                <a href="./privacy.html" class="tfooter__a">Политика конфиденциальности</a>
+            </div>
+            <div class="tfooter__right">
+                <p class="tfooter__tel">+375 (25) 100-05-05</p>
+                <p class="tfooter__address">Гомель, Гомельская область</p>
+            </div>
         </div>
-    </div>
-    <div class="bfooter__container">
-        <p class="bfooter__copy">©2021 СТРОИМ ВМЕСТЕ</p>
-        <a href="#" class="bfooter__link">Политика конфиденциальности</a>
-        <a href="#" class="bfoooter__totop"><img src="./images/textlogo.png" alt="" class="bfooter__img"></a>
-    </div>
-<script src="./modules/splide.min.js"></script>
-<script src="./modules/glide.min.js"></script>
-<script src="./script.js"></script>
-</body>
+        <div class="bfooter__container">
+            <p class="bfooter__copy">©2021 СТРОИМ ВМЕСТЕ</p>
+            <a href="./privacy.html" class="bfooter__link">Политика конфиденциальности</a>
+            <a href="./index.html" class="bfoooter__totop"><img src="./images/textlogo.png" alt="" class="bfooter__img"></a>
+        </div>
+        <script src="./modules/splide.min.js"></script>
+        <script src="./modules/glide.min.js"></script>
+        <script src="./main.js"></script>
+        <script src="./script.js"></script>
+        <script>
+            const tel = document.getElementById('tel')
+            telvalue = tel.value
+            document.getElementById('selecttel').addEventListener('click', () => {
+                tel.select()
+            })
+            tel.addEventListener('input', event => {
+                event.preventDefault()
+                tel.value = telvalue
+            })
+        </script>
+    </body>
 </html>
