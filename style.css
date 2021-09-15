@@ -423,15 +423,16 @@ Objects
     width: auto;
 }
 .obj__a, .obj__a:link {
+    height: 42px;
+    padding: 14px 4px 8px;
     display: block;
-    max-width: 100px;
+    width: 180px;
     text-align: center;
     margin: 0 auto 128px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
     color: var(--white);
-    padding: 14px 50px;
     border-radius: 3px;
     background-color: var(--red);
     border: 2px solid var(--transparent);
@@ -473,25 +474,15 @@ Contacts
     align-items: center;
 }
 .contacts__tel {
-    max-width: 260px;
-    padding: 13px 8px 13px 20px;
     border-radius: 7px;
     border: none;
-    margin-left: 32px;
-    margin-right: 43px;
-    font-size: 26px;
+    max-width: 260px;
 }
 .contacts__tel:hover, .contacts__tel:focus, .contacts__tel:active {
     border: none;
     outline: none;
 }
-.contacts__call {
-    width: 60px;
-    height: 60px;
-}
 .contacts__bottom .contacts__img {
-    width: 60px;
-    height: 60px;
     transition: 600ms ease;
 }
 .contacts__bottom .contacts__img:hover  {
@@ -501,13 +492,67 @@ Contacts
     width: 50px;
     height: 50px;
 } 
-.contacts__bottom .contacts__a:not(:last-child) {
-    margin-right: 43px;
-}
 .contacts__bottom {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+@media (min-width: 1200px) {
+    .contacts__tel {
+        margin-left: 32px;
+        margin-right: 43px;
+        font-size: 22px;
+        padding: 13px 8px 13px 20px;
+    }
+    .contacts__bottom .contacts__img {
+        width: 60px;
+        height: 60px;
+    }
+    .contacts__call {
+        width: 60px;
+        height: 60px;
+    }
+    .contacts__bottom .contacts__a:not(:last-child) {
+        margin-right: 43px;
+    }
+}
+@media (min-width: 900px) and (max-width: 1199px) {
+    .contacts__tel {
+        margin-left: 22px;
+        margin-right: 33px;
+        font-size: 18px;
+        padding: 13px 8px 13px 20px;
+    }
+    .contacts__bottom .contacts__img {
+        width: 40px;
+        height: 40px;
+    }
+    .contacts__call {
+        width: 40px;
+        height: 40px;
+    }
+    .contacts__bottom .contacts__a:not(:last-child) {
+        margin-right: 33px;
+    }
+}
+@media (max-width: 899px) {
+    .contacts__tel {
+        font-size: 16px;
+        margin-left: 12px;
+        margin-right: 23px;
+        padding: 10px 8px 10px 20px;
+    }
+    .contacts__bottom .contacts__img {
+        width: 30px;
+        height: 30px;
+    }
+    .contacts__call {
+        width: 30px;
+        height: 30px;
+    }
+    .contacts__bottom .contacts__a:not(:last-child) {
+        margin-right: 23px;
+    }
 }
 /*
 =========================================================== 
